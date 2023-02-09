@@ -23,7 +23,7 @@
       <module name="kafka-admin" options="-parameters" />
       <module name="kafka-model" options="-parameters" />
       <module name="kafka-producer" options="-parameters" />
-      <module name="microservices-demo" options="" />
+      <module name="microservices-demo" options="-parameters" />
       <module name="twitter-to-kafka-service" options="-parameters" />
     </option>
   </component>

@@ -32,6 +32,7 @@
 		<httpclient.version>4.5.13</httpclient.version>
 		<json.version>20200518</json.version>
 		<hibernate.version>5.0.7.Final</hibernate.version>
+		<avro.version>1.10.0</avro.version>
 	</properties>
 
 	<dependencyManagement>
@@ -53,6 +54,13 @@
 					</exclusion>
 				</exclusions>
 			</dependency>
+
+			<dependency>
+				<groupId>org.apache.avro</groupId>
+				<artifactId>avro</artifactId>
+				<version>${avro.version}</version>
+			</dependency>
+
 
 			<dependency>
 				<groupId>org.twitter4j</groupId>
