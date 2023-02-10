@@ -13,3 +13,10 @@ twitter-to-kafka-service:
   twitter-v2-base-url: https://api.twitter.com/2/tweets/search/stream?tweet.fields=created_at&expansions=author_id
   twitter-v2-rules-base-url: https://api.twitter.com/2/tweets/search/stream/rules
   twitter-v2-bearer-token: AAAAAAAAAAAAAAAAAAAAAOw0lgEAAAAA1Bcut8UxOuZ2vIScoJdcvMCUakg%3DpqgtXhVSwwiV2UoBJowMJyvDm7c3jkJfhLrUOh4YFpQPyvyIjt
+
+retry-config:
+  initialIntervalMs: 1000
+  maxIntervalMs: 10000
+  multiplier: 2.0
+  maxAttempts: 3
+  sleepTimeMs: 1000
