@@ -35,7 +35,7 @@ public class TwitterV2KafkaStreamRunner implements StreamRunner {
                 twitterV2StreamHelper.setupRules(bearerToken, getRules());
                 twitterV2StreamHelper.connectStream(bearerToken);
             } catch (IOException | URISyntaxException e) {
-                LOG.error("Error streaming tweets!", e);
+                LOG.error("Error streaming tweets!", e.getMessage());
                 throw new RuntimeException("Error streaming tweets!", e);
             }
         } else {

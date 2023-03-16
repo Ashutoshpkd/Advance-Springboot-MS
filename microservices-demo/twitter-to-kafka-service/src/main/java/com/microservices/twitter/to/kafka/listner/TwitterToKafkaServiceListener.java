@@ -7,9 +7,9 @@ import twitter4j.Status;
 import twitter4j.StatusAdapter;
 
 @Component
-public class TwitterToKafkaServiceListner extends StatusAdapter {
+public class TwitterToKafkaServiceListener extends StatusAdapter {
 
-    private static final Logger logger = LoggerFactory.getLogger(TwitterToKafkaServiceListner.class);
+    private static final Logger logger = LoggerFactory.getLogger(TwitterToKafkaServiceListener.class);
 
     @Override
     public void onStatus(Status status) {
